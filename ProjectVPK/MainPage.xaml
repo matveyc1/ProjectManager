@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectVPK.MainPage">
+
+    <ScrollView BackgroundColor="DarkSalmon">
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="25"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="90"/>
+            </Grid.RowDefinitions>
+
+            <Button x:Name="PlanRoom"
+                 Clicked="PlanRoom_Clicked"
+                 Text="Планы"
+                 BackgroundColor="AntiqueWhite"
+                 TextColor="Black"
+                 Grid.Column="1"
+                 Grid.Row="1"/>
+
+            <Button x:Name="StatsRoom"
+                 Clicked="StatsRoom_Clicked"
+                 Text="Прогресс"
+                 BackgroundColor="Green"
+                 Grid.Column="3"
+                 Grid.Row="1"/>
+
+            <Button x:Name="FileRoom"
+                 Clicked="FileRoom_Clicked"
+                 Text="Загрузка файлов"
+                 BackgroundColor="Red"
+                 Grid.Column="1"
+                 Grid.Row="3"/>
+
+            <Button x:Name="MessageRoom"
+                 Clicked="MessageRoom_Clicked"
+                 Text="Сообщения"
+                 BackgroundColor="Purple"
+                 Grid.Column="3"
+                 Grid.Row="3"/>
+
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
